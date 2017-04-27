@@ -68,7 +68,7 @@ def train(self):
 
 def return_predict(self, im):
     assert isinstance(im, np.ndarray), \
-				'Image is not a np.ndarray'
+                'Image is not a np.ndarray'
     h, w, _ = im.shape
     im = self.framework.resize_input(im)
     this_inp = np.expand_dims(im, 0)

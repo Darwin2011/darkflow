@@ -20,9 +20,9 @@ class Darknet(object):
         if self.src_cfg == FLAGS.model:
             self.meta, self.layers = src_parsed
         else: 
-        	print('Parsing {}'.format(FLAGS.model))
-        	des_parsed = self.parse_cfg(FLAGS.model, FLAGS)
-        	self.meta, self.layers = des_parsed
+            print('Parsing {}'.format(FLAGS.model))
+            des_parsed = self.parse_cfg(FLAGS.model, FLAGS)
+            self.meta, self.layers = des_parsed
 
         self.load_weights()
 

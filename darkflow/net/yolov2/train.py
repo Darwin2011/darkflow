@@ -7,7 +7,7 @@ import os
 import math
 
 def expit_tensor(x):
-	return 1. / (1. + tf.exp(-x))
+    return 1. / (1. + tf.exp(-x))
 
 def loss(self, net_out):
     """

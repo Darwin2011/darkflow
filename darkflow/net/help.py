@@ -41,7 +41,7 @@ def say(self, *msgs):
         if msg is None: continue
         print(msg)
 
-def load_old_graph(self, ckpt):	
+def load_old_graph(self, ckpt): 
     ckpt_loader = create_loader(ckpt)
     self.say(old_graph_msg.format(ckpt))
     

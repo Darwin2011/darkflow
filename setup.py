@@ -64,11 +64,11 @@ else :
 
 setup(
     version=VERSION,
-	name='darkflow',
+    name='darkflow',
     description='Darkflow',
     license='GPLv3',
     url='https://github.com/thtrieu/darkflow',
     packages = find_packages(),
-	scripts = ['flow'],
+    scripts = ['flow'],
     ext_modules = cythonize(ext_modules)
 )
